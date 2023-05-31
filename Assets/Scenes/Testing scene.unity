@@ -786,7 +786,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1590832608
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -880,7 +880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1883424345}
   - component: {fileID: 1883424344}
-  - component: {fileID: 1883424343}
+  - component: {fileID: 1883424346}
   - component: {fileID: 1883424342}
   m_Layer: 0
   m_Name: Cube
@@ -888,7 +888,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1883424342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -902,23 +902,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   filePath: Assets/Models/actual_hypercube.s4dge
---- !u!114 &1883424343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883424341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf1e6b9efc40dce459d6fd0dd4e22c29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: a40bb0b7fced82b40893d7dbd2bde6de, type: 2}
-  previewW: 0
-  renderWireFrame: 0
-  previewWidth: 0
-  showWhenOutOfRange: 1
 --- !u!114 &1883424344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -931,15 +914,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fd6f7826baacf74c85eb1a8616a08ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  localPosition: {x: NaN, y: NaN, z: NaN, w: NaN}
+  localPosition: {x: 0, y: 0, z: 0, w: 0}
   localRotation:
-  - 0
-  - 0
-  - 0
-  - -0
-  - 0
-  - 0
-  localScale: {x: 1, y: 1, z: 1, w: 0}
+  - -0.01
+  - -2.11
+  - 1.15
+  - 0.54
+  - 0.72
+  - 5.05
+  localScale: {x: 1, y: 1, z: 1, w: 1}
 --- !u!4 &1883424345
 Transform:
   m_ObjectHideFlags: 0
@@ -955,6 +938,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1883424346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883424341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5805b747fec02ff469d573515bbb8cfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 05d0fcee30d4bd941a73335c21f6a5c5, type: 2}
 --- !u!1001 &1910386979
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1118,7 +1114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5878538348108483145, guid: 0cd4206998392124eb07486d09de0773, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5878538348215294334, guid: 0cd4206998392124eb07486d09de0773, type: 3}
       propertyPath: localPosition.y

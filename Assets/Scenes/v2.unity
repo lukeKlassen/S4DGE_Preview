@@ -399,15 +399,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fd6f7826baacf74c85eb1a8616a08ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 0, y: 0, z: 0, w: 0}
-  rotation:
+  localPosition: {x: 0, y: 0, z: 0, w: 0}
+  localRotation:
   - 0
   - 0
   - 0
   - 0
   - 0
   - 0
-  scale: {x: 1, y: 1, z: 1, w: 1}
+  localScale: {x: 1, y: 1, z: 1, w: 1}
 --- !u!114 &336166267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -666,7 +666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &800577309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -695,15 +695,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fd6f7826baacf74c85eb1a8616a08ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 2.53, y: 3, z: 2.98, w: 0}
-  rotation:
-  - 1.57
-  - 1.38
-  - 1.88
-  - 1.99
-  - 1.2
-  - 2.04
-  scale: {x: 2.44, y: 2.59, z: 2.83, w: 2.71}
+  localPosition: {x: 0, y: 0, z: 0, w: 0}
+  localRotation:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  localScale: {x: 1, y: 1, z: 1, w: 1}
 --- !u!4 &800577311
 Transform:
   m_ObjectHideFlags: 0
@@ -897,144 +897,168 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines4D:
   - p1:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 0, w: 15}
         uv: {x: 0, y: 0}
     p2:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 0, w: 10}
         uv: {x: 0, y: 0}
   - p1:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 0, w: 10}
         uv: {x: 0, y: 0}
     p2:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 15, w: 10}
         uv: {x: 0, y: 0}
   - p1:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 15, w: 10}
         uv: {x: 0, y: 0}
     p2:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 15, w: 15}
         uv: {x: 0, y: 0}
   - p1:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 15, w: 15}
         uv: {x: 0, y: 0}
     p2:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 0, w: 15}
         uv: {x: 0, y: 0}
   - p1:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 0, w: 15}
         uv: {x: 0, y: 0}
     p2:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 0, w: 10}
         uv: {x: 0, y: 0}
   - p1:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 0, w: 10}
         uv: {x: 0, y: 0}
     p2:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 15, w: 10}
         uv: {x: 0, y: 0}
   - p1:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 15, w: 10}
         uv: {x: 0, y: 0}
     p2:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 15, w: 15}
         uv: {x: 0, y: 0}
   - p1:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 15, w: 15}
         uv: {x: 0, y: 0}
     p2:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 0, w: 15}
         uv: {x: 0, y: 0}
   - p1:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 0, w: 15}
         uv: {x: 0, y: 0}
     p2:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 0, w: 15}
         uv: {x: 0, y: 0}
   - p1:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 0, w: 10}
         uv: {x: 0, y: 0}
     p2:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 0, w: 10}
         uv: {x: 0, y: 0}
   - p1:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 15, w: 10}
         uv: {x: 0, y: 0}
     p2:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 15, w: 10}
         uv: {x: 0, y: 0}
   - p1:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 15, w: 15}
         uv: {x: 0, y: 0}
     p2:
+      name: 
       subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: 0}
         uv: {x: 0, y: 0}
@@ -1042,106 +1066,126 @@ MonoBehaviour:
         uv: {x: 0, y: 0}
   faces4D:
   - points:
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 0, w: 15}
         uv: {x: 0, y: 0}
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 0, w: 10}
         uv: {x: 0, y: 0}
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 15, w: 10}
         uv: {x: 0, y: 0}
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 15, w: 15}
         uv: {x: 0, y: 0}
   - points:
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 0, w: 15}
         uv: {x: 0, y: 0}
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 0, w: 10}
         uv: {x: 0, y: 0}
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 15, w: 10}
         uv: {x: 0, y: 0}
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 15, w: 15}
         uv: {x: 0, y: 0}
   - points:
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 0, w: 15}
         uv: {x: 0, y: 0}
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 0, w: 10}
         uv: {x: 0, y: 0}
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 0, w: 10}
         uv: {x: 0, y: 0}
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 0, w: 15}
         uv: {x: 0, y: 0}
   - points:
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 0, w: 10}
         uv: {x: 0, y: 0}
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 15, w: 10}
         uv: {x: 0, y: 0}
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 15, w: 10}
         uv: {x: 0, y: 0}
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: -5}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 0, w: 10}
         uv: {x: 0, y: 0}
   - points:
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 0, w: 15}
         uv: {x: 0, y: 0}
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 0, w: 15}
         uv: {x: 0, y: 0}
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 5, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 5, z: 15, w: 15}
         uv: {x: 0, y: 0}
-    - subpoints:
+    - name: 
+      subpoints:
       - position4D: {x: 0, y: 0, z: 0, w: 0}
         uv: {x: 0, y: 0}
       - position4D: {x: 15, y: 0, z: 15, w: 15}
@@ -1159,19 +1203,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262987207706133986, guid: 70df568d9278ad740b40da8ab7dcd016, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6262987207706133987, guid: 70df568d9278ad740b40da8ab7dcd016, type: 3}
       propertyPath: filePath
       value: Assets/Models/hypercube.s4dge
       objectReference: {fileID: 0}
     - target: {fileID: 6262987207706134012, guid: 70df568d9278ad740b40da8ab7dcd016, type: 3}
+      propertyPath: material
+      value: 
+      objectReference: {fileID: 2100000, guid: 05d0fcee30d4bd941a73335c21f6a5c5, type: 2}
+    - target: {fileID: 6262987207706134012, guid: 70df568d9278ad740b40da8ab7dcd016, type: 3}
       propertyPath: previewW
       value: -0.88
       objectReference: {fileID: 0}
     - target: {fileID: 6262987207706134012, guid: 70df568d9278ad740b40da8ab7dcd016, type: 3}
       propertyPath: previewWidth
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6262987207706134013, guid: 70df568d9278ad740b40da8ab7dcd016, type: 3}
       propertyPath: m_RootOrder
@@ -1254,6 +1302,10 @@ PrefabInstance:
       propertyPath: mesh
       value: 
       objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 6262987207706134012, guid: 70df568d9278ad740b40da8ab7dcd016, type: 3}
+      propertyPath: material
+      value: 
+      objectReference: {fileID: 2100000, guid: 05d0fcee30d4bd941a73335c21f6a5c5, type: 2}
     - target: {fileID: 6262987207706134012, guid: 70df568d9278ad740b40da8ab7dcd016, type: 3}
       propertyPath: previewW
       value: -0.88
